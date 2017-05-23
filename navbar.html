@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bars</title>
+    
+    <style>
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            width:25%;
+            border:1px solid black;
+            position:fixed;
+            height:100%;
+            overflow:auto;
+            background-color:#f1f1f1;
+        }
+        li a{
+            display:block;
+            padding:8px 16px;
+            text-decoration:none;
+        }
+        li a:hover{
+            background-color:saddlebrown;
+            color:white;
+        }
+        li a.active{
+            background-color:limegreen;
+            color:white;
+        }
+        li{
+            text-align:center;
+            border-bottom:1px solid grey;
+        }
+        li:last-child{
+            border-bottom:none;
+        }
+        div{
+            height:1000px;
+            margin-left:25%;
+            padding:1px 16px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    
+    <div>
+    <h1>This is the heading</h1>
+        <h3>Try to scroll the area down.</h3>
+        <p>some text...</p>
+        <p>some text...</p>
+        <p>some text...</p>
+        <p>some text...</p>
+        <p>some text...</p>
+    </div>
+</body>
+</html>

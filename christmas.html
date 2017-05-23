@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas light</title>
+    
+    <style>
+        body{
+            background:black;
+        }
+        #wire{
+            text-align:center;
+            position:relative;
+            padding:0;
+            margin:0;
+            border-top:1px solid grey;
+        }
+        #wire li{
+            width:15px;
+            height:30px;
+            margin:0 20px;
+            background-color:red;
+            border-radius:50%;
+            display:inline-block;
+            animation-name:even-bulb;
+            animation-iteration-count: infinite;
+            animation-duration:1s;
+            animation-fill-mode:both;
+        }
+        #wire li:nth-child(odd){
+            animation:odd-bulb 1s infinite;
+        }
+        
+        @keyframes even-bulb{
+            0%,100%{
+                background:rgba(255,230,65,1);
+                box-shadow:0px 2px 10px 4px rgba(255,230,65,1);
+            }
+            50%{
+                background:rgba(255,230,65,0.5);
+                box-shadow:0px 2px 10px 4px rgba(255,230,65,0.5);
+            }
+        }
+        @keyframes odd-bulb{
+            0%,100%{
+                background:rgba(255,65,185,1);
+                box-shadow:0px 2px 10px 4px rgba(255,65,185,1);
+            }
+            50%{
+                background:rgba(255,65,185,0.5);
+                box-shadow:0px 2px 10px 4px rgba(255,65,185,0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="wire">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

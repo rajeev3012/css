@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    
+    <style>
+        ul{
+            width:1000px;
+            height:500px;
+            border:1px solid grey;
+            margin:0px;
+            padding:0px;
+            display:flex;
+            list-style:none;
+            flex-flow:row wrap; /* flex-flow: flex-direction + flex-wrap; */
+            justify-content:flex-end;
+            align-items:center;
+            align-content:center;
+        }
+        li{
+            width:200px;
+            background-color:red;
+            margin:5px;
+            font-size:50px;
+            order:1;
+            
+        }
+        #three{
+            align-self:flex-start;
+            flex-grow:1;
+            order:0;
+            padding:5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li id="three">3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        
+        
+    </ul>
+</body>
+</html>

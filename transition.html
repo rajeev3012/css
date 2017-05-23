@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background-color:palegreen;
+            transition:width 2s linear 2s, height 2s linear 2s, transform 2s;
+        }
+        div:hover{
+            width:500px;
+            height:500px;
+            transform:rotate(360deg);
+            font-size:50px;
+        }
+    </style>
+</head>
+<body>
+   <div>Basic transition</div>
+    <!-- transition:transition-property transition-duration transition-timing-function transition-delay;
+        transition-timing-function:linear | ease | ease-in | ease-out | ease-in-out-->
+</body>
+</html>
